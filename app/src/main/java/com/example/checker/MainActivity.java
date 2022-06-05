@@ -64,9 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(result != null) {
-            if(result.getContents() == null) {
-                //Cancelled
-            } else {
+            if(result.getContents() != null) {
                 employee_id = result.getContents();
                 dispatchTakePictureIntent();
             }
