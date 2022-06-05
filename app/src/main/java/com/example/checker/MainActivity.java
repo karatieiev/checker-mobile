@@ -59,9 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             sendRequest(bitMapToBase64(imageBitmap));
-
-            //ImageView imageView = (ImageView)findViewById(R.id.imageView);
-            //imageView.setImageBitmap(imageBitmap);
             return;
         }
 
